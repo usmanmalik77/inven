@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>POS & Inventory management Documentation</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  
+</head>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+#toTop {
+    padding: 5px 3px;
+    background: #000;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    display: none;
+}
+</style>
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">POS & Inventory management system</div>
+      <div class="list-group list-group-flush">
+        <a href="#general_information" class="list-group-item list-group-item-action bg-light">General Information</a>
+        <a href="#settings" class="list-group-item list-group-item-action bg-light">Settings & installation guide
+        </a>
+        <a href="#files_location" class="list-group-item list-group-item-action bg-light">Files Location</a>
+        <a href="#operate" class="list-group-item list-group-item-action bg-light">Operate & Manauals</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+  
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" id="myHeader">
+        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+      </nav>
+      <div class="content">
+      <div class="container-fluid" id="general_information">
+        <h1 class="mt-4">General Information</h1>
+        <h3 class="mt-4">POS & Inventory management System</h3>
+        <p>
+           This is the <b>Point of Sale (POS) & Inventory management system</b> for small ,medium & large company(Extended Version). 
+           In this <b>POS and Inventory management system</b> You will have the products information with selling price,
+           buying price,category and subcategory.The products will be used as item and at the purchase time You can add 
+           multiple items and suppliers info and general information.at the Sale time you can add 
+           multiple items and customers info and general information.You can print out the pdf formatted invoice.  
+            <h3 class="mt-4">Dashboard:</h3>
+                  After login You can see Dashboard with the current status of inventory,products,Purchase & Invoice
+            <h3 class="mt-4">Products:</h3>
+                 You will have your products with  category & subcategory.
+            The Products will have the buying price & selling price
+            <h3 class="mt-4">Purchase:</h3>
+                  At the purchase you need to add the items from previous added products.
+            You will enter there the supplier info & General info.Print your purchase with the pdf format
+            <h3 class="mt-4">Sell(Invoice):</h3>
+                  At the Sell  you need to add the items from previous added products.
+            You will enter there the customer info & general info.Print the Invoice with pdf format
+            
+            <h3 class="mt-4">Material Used:</h3>
+            HTML,CSS,JS<br>
+            PHP 5.6+<br>
+            CodeIgniter 3.1.11 Framewok<br>
+            MYSQL 5.6+
+        </p>
+      </div>
+      
+      <div class="container-fluid" id="settings">
+        <h1 class="mt-4">Settings & installation guide</h1>
+        <h3 class="mt-4">MYSQL:</h3>
+         <h3 class="mt-4">Database:</h3>
+        <p>
+            <img src="images/db_location.png" class="img-fluid"><br><br>
+            <img src="images/import.png"  class="img-fluid"><br><br>
+            The database and its tables is in zip folder.In PhpMyAdmin make a database name
+            and click import.now browse and select *.sql file  from unzipped folder and after submitting 
+            You can see all the tables there.
+        </p>
+        
+        <h3 class="mt-4">PHP:</h3>
+        <h3 class="mt-4">config.php:</h3>
+        <p>
+            <img src="images/config.png" class="img-fluid"><br><br>
+            Path : <code>application/config/config.php</code><br>
+            Enter your domain name here example : http://www.example.com
+        </p>
+        <h3 class="mt-4">database.php:</h3>
+        <p>
+            <img src="images/database.png" class="img-fluid"><br><br>
+            Path : <code>application/config/database.php</code><br>
+            Enter your database name,username & password
+        </p>
+      </div>
+      
+      <div class="container-fluid" id="files_location">
+        <h1 class="mt-4">Files location</h1>
+        <h3 class="mt-4">Controller,Model,Views:</h3>
+        <p>
+            <img src="images/file_location_php.png" class="img-fluid"><br><br>            
+            <b>Controller:</b><br>
+            Path : <code>application/controller</code><br>
+            All the business logic is here and included the model and views<br>
+            
+            <b>Model:</b><br>
+            Path : <code>application/model</code><br>
+            Database Model to retive data<br>
+            
+            <b>Views:</b><br>
+            Path : <code>application/views</code><br>
+            HTML and Tables to display data<br>
+        </p>
+        <h3 class="mt-4">libraris:</h3>
+        <p>
+            <img src="images/libraris.png" class="img-fluid"><br><br>
+            Path :<code>application/libraris</code><br>
+            Your custom libraris and load in Controller
+        </p>
+        <h3 class="mt-4">third_party:</h3>
+        <p>
+            <img src="images/3rdparty.png" class="img-fluid"><br><br>
+            Path : <code>application/third_party</code><br>
+            Keep all your third party property like pdf , excell etc.
+        </p>
+        <h3 class="mt-4">public:</h3>
+        <p>
+            <img src="images/public.png" class="img-fluid"><br><br>
+            Path :<code>public</code><br>
+            Keep all your public property like js,css and images
+        </p>
+      </div>
+      
+      <div class="container-fluid" id="operate">
+        <h1 class="mt-4">Operate & Manauals</h1>
+        <h3 class="mt-4">Login:</h3>
+        <p>
+            <img src="images/Admin Login.png" class="img-fluid"><br><br>
+            Login with your username(email) & password stored in users tables 
+        </p>
+        <h3 class="mt-4">Dashboard:</h3>
+        <p>
+            <img src="images/Admin Home.png" class="img-fluid"><br><br>
+            In the Dashboard you can see total suppliers,customers,total purchased and total sold
+        </p>
+         <h3 class="mt-4">Profile:</h3>
+        <p>
+            <img src="images/Admin Profile.png" class="img-fluid"><br><br>
+            Enter the profile information with name,email,contact,picture and address information
+        </p>
+        <h3 class="mt-4">Company:</h3>
+        <p>
+            <img src="images/Admin Company.png" class="img-fluid"><br><br>
+            Enter Company information with logo,company name and others information
+        </p>
+        <h3 class="mt-4">Product:</h3>
+        <p>
+            <img src="images/Admin Product.png" class="img-fluid"><br><br>
+            Enter the product information with category and sub category
+        </p>
+        <h3 class="mt-4">Purchase:</h3>
+        <p>
+            <img src="images/Admin Purchase.png" class="img-fluid"><br><br>
+            Enter the items and supplier's information and general information
+        </p>
+        <h3 class="mt-4">Invoice:</h3>
+        <p>
+            <img src="images/Admin Invoice.png" class="img-fluid"><br><br>
+            Enter the items the Customer wants to buy and customer's information and general information
+        </p>
+        <h3 class="mt-4">Invoice Pdf:</h3>
+        <p>
+            <img src="images/invoice_pdf.png" class="img-fluid"><br><br>
+            From the invoice on clicking the print icon You will get invoice in pdf.There you can see invoice no
+            Customer's information,Items sold & total price. 
+        </p>
+       
+      </div>
+     
+     </div>  
+      
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+  <div id="toTop"><i class="fa fa-arrow-up" aria-hidden="true"></i>Top</div>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+	
+	window.onscroll = function() {myFunction()};
+
+	var header = document.getElementById("myHeader");
+	var sticky = header.offsetTop;
+	
+	function myFunction() {
+	  if (window.pageYOffset > sticky) {
+		header.classList.add("sticky");
+	  } else {
+		header.classList.remove("sticky");
+	  }
+	}
+	////////////////////////
+	$(window).scroll(function() {
+		if ($(this).scrollTop()) {
+			$('#toTop').fadeIn();
+		} else {
+			$('#toTop').fadeOut();
+		}
+	});
+	
+	$("#toTop").click(function() {
+		$("html, body").animate({scrollTop: 0}, 1000);
+	 });	
+  </script>
+
+</body>
+
+</html>
